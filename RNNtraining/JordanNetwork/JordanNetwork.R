@@ -109,11 +109,6 @@ if (unique(test) != 0) {
 
 # Model tuning and training:
 maxit   = 10000 # The bigger is the number of iteration, the more stable the model is
-layer1  = 40    # c(layer1, layer2, layer3) = gridsearch for parameters tuning
-layer2  = 20
-layer3  = 20
+layer  = 40    # 1,...,40: grisearch for parameter's tuning
 
-# Elman network tuning
-elmanTuning(layer1, layer2, layer3, maxit)
-# Jordan network tuning: only one layer
-jordanTuning(layer1, maxit)
+jordanTuning(layer, maxit)

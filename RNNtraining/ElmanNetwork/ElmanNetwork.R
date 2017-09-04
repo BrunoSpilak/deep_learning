@@ -146,5 +146,4 @@ layer1  = 40    # c(layer1, layer2, layer3) = gridsearch for parameters tuning
 layer2  = 20
 layer3  = 20
 
-# Elman network tuning
 elmanTuning(layer1, layer2, layer3, maxit)
