@@ -14,7 +14,7 @@ See also : RNNtraining, ElmanNetwork, JordanNetwork
 Author : SPILAK Bruno
 
 Datafile:
-- Data.csv : 'Table produced by Data_Format.R. Data in correct format without any missing values'
+- Data.csv : dataset
 - RNNtraining/ElmanNetwork.RData: Elman network used for predictions
 - RNNtraining/JordanNetwork.RData: Jordan network used for predictions
 
