@@ -1,0 +1,24 @@
+Name of Quantlet : ElmanNetwork
+
+Published in : Statistics of Financial Markets
+
+Description : 'Trains an Elman recurrent network on the crypto currencies data set.
+It tunes the hyperparameters: the number of hidden layers between 1 and 3 and the number of neurons in each hidden layer.'
+
+Keywords : Recurrent neural network, Jordan network, Elman network, cryptocurrencies, Crix, portfolio managment
+
+See also : RNNtraining, ElmanNetwork, JordanNetwork
+
+Author : SPILAK Bruno
+
+Datafile:
+- RNNtraining/ElmanNetwork.RData: Final Elman network used for predictions
+
+Input:
+- 'Data.csv'
+
+Output:
+- 'ElmanNetwork.RData'
+
+
+Submitted : 2017/08/30
