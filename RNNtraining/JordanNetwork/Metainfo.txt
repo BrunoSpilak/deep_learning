@@ -12,11 +12,13 @@ See also : RNNtraining, ElmanNetwork, JordanNetwork
 Author : SPILAK Bruno
 
 Datafile:
-- 'RNNtraining/ElmanNetwork.RData': Final Elman network used for predictions
-- 'Data.csv': Dataset
+- RNNtraining/ElmanNetwork.RDat: Final Elman network used for predictions
+- Data.csv: Dataset
 
 Input:
-- 'Data.csv'
+- Data.csv
 
 Output:
-- 'ElmanNetwork.RData'
+- ElmanNetwork.RData
+
+Submitted: 2017/09/04
