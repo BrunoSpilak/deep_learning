@@ -2,6 +2,10 @@
 rm(list = ls(all = TRUE))
 graphics.off()
 
+# Load and install packages if necessary
+if (!require("xts")) install.packages("xts")
+library("xts")
+
 # Graphics
 final.graph = function(data, var, model_type) {
     datepred = as.Date(time(data[[var]]$prediction))
@@ -116,13 +120,14 @@ strategy = function() {
     
     return(list(structure = structure, portfolio = portfolio, returns = return.portfolio))
 }
-# Load and install packages if necessary
-if (!require("xts")) install.packages("xts")
-library("xts")
 
 # Load Data Load the final models
-load(paste(getwd(), "/Models/ModelJordanFinal.RData", sep = ""))
-load(paste(getwd(), "/Models/ModelElmanFinal.RData", sep = ""))
+dir = getwd()
+setwd("../")
+load(paste(getwd(), "/RNNtraining/JordanNetwork/JordanNetwork.RData", sep = ""))
+load(paste(getwd(), "/RNNtraining/ElmanNetwork/ElmanNetwork.RData", sep = ""))
+setwd(dir)
+
 # Load Data
 prices    = read.csv2(paste(getwd(), "/Data.csv", sep = ""), sep = ",", dec = ".")
 prices    = xts(prices[, -1], order.by = as.Date(prices[, 1]))

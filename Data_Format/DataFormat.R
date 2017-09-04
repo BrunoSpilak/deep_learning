@@ -17,9 +17,9 @@ remove(package.list)
 remove(ipak)
 
 # Format of the market data
-variables = list.files(path = paste(getwd(), "/Data_Format/Other/", sep = ""))
+variables = list.files(path = paste(getwd(), "/Other/", sep = ""))
 market = lapply(variables, function(i) {
-    i <- paste(paste(getwd(), "/Data_Format/Other/", sep = ""), i, sep = "")
+    i <- paste(paste(getwd(), "/Other/", sep = ""), i, sep = "")
     read.csv2(i, header = TRUE, sep = ";", dec = ".")
 })
 names(market) <- gsub(".csv", "", variables)
@@ -49,7 +49,7 @@ print(apply(marketData, 2, function(x) sum(is.na(x))))  # No NA
 remove(market)
 
 # Format of the Crix data
-load(paste(getwd(), "/Data_Format/CompleteData.RData", sep = ""))
+load(paste(getwd(), "/CompleteData.RData", sep = ""))
 # Missing value test
 print(apply(crix, 2, function(x) sum(is.na(x))))
 # 34% of missing values for eth eth has a lot of NAs, for now we delete it
