@@ -1,0 +1,21 @@
+Name of Quantlet : CryptoStrategy
+
+Published in : Statistics of Financial Markets
+
+Description : 'Creates a portfolio of cryptocurrencies with a 3 months horizon, based on the recurrent neural network predictions.
+The cryptos are included in the portfolio if their 3 months return is expected to be bigger than 5%.
+The price prediction used for the strategy are obtained in RNNtraining Quantlet.
+Additionnaly it plots the price predictions.'
+
+Keywords : Recurrent neural network, Jordan network, Elman network, cryptocurrencies, Crix, portfolio managment
+
+See also : RNNtraining, ElmanNetwork, JordanNetwork
+
+Author : SPILAK Bruno
+
+Datafile:
+- Data.csv : 'Table with the data in correct format and without any missing values'
+- RNNtraining/ElmanNetwork.RData: Elman network used for predictions
+- RNNtraining/JordanNetwork.RData: Jordan network used for predictions
+
+Submitted : 2017/08/30
